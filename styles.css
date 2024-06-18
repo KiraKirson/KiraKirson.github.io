@@ -1,35 +1,83 @@
-h1{
-    color: rgb(19, 69, 131);
-    font-family: active;
-    font-size: 90px;
-    margin: 0px;
-    padding: 0px;
+@font-face {
+    font-family: jamesStroker;
+    src: url(fonts/JamesStroker-jEZMO.woff);
 }
-h2{
-    color:rgb(48, 88, 135);
-    margin: 0px;
-    padding: 0px;
+@font-face {
+    font-family: berlin;
+    src: url(fonts/BRLNSR.woff);
 }
+
 body{
+    font-family: berlin;
     background: rgb(20, 32, 45);
     color: rgb(156, 173, 241);
     margin: 0px;
     padding: 0px;
 
 }
+.logo{
+    width: 85px;    
+    height: 85px;
+    display: inline-block;
+    background-image: url(images/KiraKirson_Logo.png);
+    background-size: 85px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+    position: relative;
+    top: 10px;
+    margin: 5px;
+    padding: 0;
+}
+h1 a{
+    color: #134583;
+    font-family: jamesStroker;
+    font-weight:lighter;
+    font-size: 80px;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+h2{
+    font-weight: lighter;
+    color:rgb(48, 88, 135);
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    bottom: 28px;
+}
+h3{
+    font-weight: lighter;
+}
 header{
     background: rgb(207, 220, 241);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 footer{
     background: black;
 }
-ul{
+ul.nav_list{
     margin:0;
     padding:0;
-    list-style-type: none;
+    display: flex;
 }
-li{
+.nav_list li{
     background: white;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+ul.nav_list:first-child{
+    margin: 0 0 0 20px;
+}
+ul.nav_list:last-child{
+    padding: 0 20px 0 0;
 }
