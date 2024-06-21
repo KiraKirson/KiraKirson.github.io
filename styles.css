@@ -36,6 +36,7 @@ h2{
 header{
     text-align: center;
     padding-bottom: 10px;
+    margin: 0 20px;
 }
 header ul{
     display: flex;
@@ -43,7 +44,8 @@ header ul{
     list-style-type: none;
 }
 .nav_list{
-    display: flex;
+    max-width: 1000px;
+    margin:  0 auto;
     border-color: #134583;
     border-style: solid;
     border-radius: 7px;
@@ -70,18 +72,16 @@ header ul{
     color: rgb(229, 238, 246);
 }
 .nav_list:first-child{
-    margin-left: 2%;
     padding-left: 20px;
 }
 .nav_list:last-child{
-    margin-right: 2%;
     padding-right: 20px;
 }
 body section{
-    margin-left: 5%;
-    margin-right: 5%;
     margin-top: 10px;
     margin-bottom: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 body section h3{
     font-size: 40px;
@@ -89,6 +89,11 @@ body section h3{
     margin-bottom: 15px;
 }
 body section p{
+    display: flexbox;
+    justify-content: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     color: rgb(4, 2, 55);
     font-size: 23px;
     line-height: 35px;
@@ -100,6 +105,104 @@ body section p{
     margin-right: auto;
     margin-top: -50px;
     width: 200px;
+}
+.project_link a{
+    display: block;
+    text-align: center;
+    background-image: url(images/RogueRodentScreenshot1.png);
+    background-size: 120%;
+    background-position-x: 80%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right:auto;
+    width: 700px;
+    height: 370px;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 370px;
+    border-radius: 10px;
+    text-shadow: 4px 0 2px black, -4px 0 2px black, 0 4px 2px black, 0 -4px 2px black, 4px 4px 2px black, -4px -4px 2px black, 4px -4px 2px black, -4px 4px 2px black;
+}
+#rogue_rodent a{
+    background-image: url(images/RogueRodentScreenshot1.png)
+}
+#ppp a{
+    background-image: url(images/PPPScreenshot.png);
+    background-size: 130%;
+}
+#tok a{
+    background-size: 110%;
+    background-image: url(images/tk.png);
+}
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h4{
+    text-align: center;
+    font-size: 30px;
+}
+body section ul{
+    margin-left: 40px;
+}
+body section ul li{
+    display: flexbox;
+    justify-content: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(4, 2, 55);
+    font-size: 23px;
+    line-height: 35px;
+}
+.gallery{    
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+.gallery figure{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+/*Gallery 2*/
+
+.gallery2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+.grid-container{
+    columns: 3 250px;
+    column-gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+.grid-container div{
+    width: 200px;
+    margin: 3px;
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+    border-radius: 3px;
+}
+.grid-container div img{
+    width: 100%;
+    border-radius: 3px;
 }
 footer{
     background: black;
